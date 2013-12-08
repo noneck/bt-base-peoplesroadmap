@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -74,3 +75,190 @@ $ git checkout gh-pages
     </div>
   </body>
 </html>
+=======
+---
+layout: default
+title: The People's Roadmap to a Digital New York City
+---
+
+{% include chaptermenu.html %}
+<div class="page">
+<header>
+  <div class="header">
+    <div class="cloud drift offset0"></div>
+    <div class="cloud drift offset1"></div>
+    <div class="cloud drift offset2"></div>
+    
+    <div class="content">
+      <div class="menu-bar">
+        <div class="menu-btn pull-right menu-icon"><span>Table of Contents</span></div>
+      </div>
+
+      <div class="byline clear">A community created book authored by BetaNYC, a Code for America brigade in NYC.</div>
+
+      <div class="title">
+        <img src="/images/beyondtransparency-large.png" />
+      </div>
+
+      <div class="about">
+        <div class="col-md-9 col-sm-9 col-xs-12">
+          <h2>Connecting New York City to the 21st Century</h2>
+          <p>
+          Welcome to The People’s Roadmap to a Digital New York City. In this document you will find values and recommendations formulated by people of New York, for the people of New York, for the 21st Century. Through our roadmap, we look at technology as a catalyst for empowerment and bridging municipal management inequalities. </P>
+
+<p>We see this document as a supplement to NYC Digital’s Roadmap, Manhattan Borough President’s Start Up City, and Chicago’s Technology Plan. Together, these documents paint an ideal nature of a digital city with programs and policies to address literacy, access, industry, and transparency. </P>
+
+<p>Through the People’s Roadmap to a Digital New York City, we want to move beyond transparency. We want a government that asks us about our needs and is responsive to our problems. Written for the people, by the people, this roadmap has traveled to all five boroughs lighting a pathway for New York City to stay the world’s premier digital city. </p>
+
+<p>“<em>Technology is not a slice of the pie, but the pan.</em>”  - Andrew Rasiej, Chairman of the New York Tech Meetup.</p>
+
+<p>As of the November 2013 election, New York City is at a critical inflection point. A new cast of actors will assume powerful roles across government. This document will help guide this next administration and successive ones into community digital services. We see technology as a catalyst to develop smarter communities, deploy high speed accessible infrastructure, develop lifelong learning education initiatives, programs for employment and economic mobility, and effective and open government.</p>
+
+<p>To accomplish this, we have established four universal digital freedoms:</br>
+<ul><li>Freedom to Connect.</li></br>
+<li>Freedom to Learn.</li></br>
+<li>Freedom to Innovate.</li></br>
+<li>Freedom to Collaborate.</li></br></UL>
+</p>
+
+<p>These four freedoms are the foundation for five core pillars in our roadmap:
+<ul><li>Accessible Infrastructure</li>
+<li>Education and Lifelong Learning</li>
+<li>Industry, Employment, and Economic Mobility</li>
+<li>Effective and Open Government</li>
+<li>Smarter Communities</li></ul></p>
+
+<p>In this roadmap, you will find 34 programs and opportunities that are critical to realizing a 21st century New York City. Cesar Chavez is quoted as saying “the fight is never about grapes or lettuce. It is always about people.”
+
+<p>As the people of New York, we too agree that the fight is not about the bits and bytes, but about the people. We want all New Yorkers connected to the 21st Century’s opportunities for a truly connected 21st Century.</p>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12 book-links">
+          <a href="/chapters/preface/"><div class="btn btn-primary btn-read">Read the book now</div></a>
+<!--          <ul class="buy-links">
+            <li class="icon-buy"><a href="http://www.amazon.com/Beyond-Transparency-Future-Civic-Innovation/dp/0615889085/" target="_blank"><img src="/images/amazon_book_icon.png" />Buy it on Amazon</a></li>
+            <li class="icon-pdf"><a href="/pdf/BeyondTransparency.pdf" target="_blank"><img src="/images/pdf_icon.png" />Get the PDF</a></li>
+            <li class="icon-donate"><a href="http://codeforamerica.org/donate" target="_blank"><img src="/images/donate_icon.png" />Donate to CfA</a></li>
+          </ul>
+          -->
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>      
+    </div>
+    <div class="city-graph" >
+      <img src="/images/city.png" />
+    </div>
+
+  </div>
+  
+</header>
+
+<section class="contributors">
+  <div class="contributors">
+    <div class="content">
+      <div class="section-heading">
+        <img src="/images/contributors.png" />
+        <h2>Some of our contributors</h2>
+      </div>
+      <ul class="authors">
+
+        {% for page in site.pages %}
+          {% if page.layout == "chapter" %}
+            {% if page.featured == true %}
+
+            <li>
+               <div>
+                 <img class="img-circle" src="{{ page.author[0].photo_url }}" />
+                 <div class="name">{{ page.author[0].name }}</div>
+                 <div class="job-title">{{ page.author[0].job }}</div>
+                 <div class="employer">{{ page.author[0].employer }}</div>
+                 <a href="{{page.url}}" >
+                   <div class="chapter-title">{{ page.title }}</div>
+                 </a>
+               </div>
+             </li>
+
+           {% endif %}
+        {% endif %}
+      {% endfor %}
+             
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<section class="critics">
+  <div class="critics">
+    <div class="content">
+      <div class="section-heading">
+        <img src="/images/quote.png" />
+        <h2>What critics have to say</h2>    
+      </div>
+<!--      <div class="quote col-md-6">
+        <p>“<em>Beyond Transparency</em> combines the inspirational glow and political grit of <em>Profiles in Courag</em>e with the clarity of an engineer’s calm explanation of how something technical actually works…. This compilation presents us with a great deal to admire, ample provocation, and wise guidance from a group of remarkable individuals.”</p>
+        <div class="attribution">&mdash; Susan Crawford, author of Captive Audience</div>
+      </div>
+      <div class="quote col-md-6">
+        <p>“Just as he did during his time in my administration, Goldstein has brought together industry leaders to discuss issues of relevance in the open data movement and the practical implications of implementing these policies… This book will help continue the work to make open government a reality across the country.”</p>
+        <div class="attribution">&mdash; Mayor Rahm Emanuel, City of Chicago</div>
+      </div>
+<br><br>
+     <div class="quote col-md-6">
+        <p><em>Beyond Transparency</em> is an invaluable overview of how open data enables the free flow of information. This collection of stories from the field illustrates how technology and collaboration can support transparency and help communities transform ideas into actions.”</p>
+        <div class="attribution">&mdash; Alberto Ibargüen, president and CEO of the John S. and James L. Knight Foundation</div>
+      </div>
+<br><br>
+     <div class="quote col-md-6">
+            <p>“A must-read for anyone who is passionate about what open data can do to transform city living.”</p>
+            <div class="attribution">&mdash; Boris Johnson, Mayor of London</div>
+          </div>
+<br><br>
+     <div class="quote col-md-6">
+       <p>“<em>Beyond Transparency</em> surveys the latest open data initiatives and outlines a compelling vision of how data and technology can reshape urban governance in America. Compiled by the best experts in the country, this book provides a compelling roadmap to take government to the next level.”</p>
+       <div class="attribution">&mdash; Steven Goldsmith, Harvard Kennedy School</div>
+     </div>
+<br><br>
+    </div>
+    <div class="clear"></div>
+  -->
+    </div>
+</section>
+<section class="about-book">
+  <div class="about-book">
+    <div class="content">
+      <div class="section-heading">
+        <img src="/images/about_book_icon.png" />
+        <h2>About this book</h2>    
+      </div>
+      <div class="quote">
+        <p>This book is  a resource for (and by) practitioners inside and outside government—from the municipal chief information officer to the community organizer to the civic-minded entrepreneur. <em>Beyond Transparency</em> is intended to capture and distill the community's learnings around open data for the past four years. And we know that the community is going to continue learning. That's why, in addition to the print version of the book which you can <a href="http://www.amazon.com/Beyond-Transparency-Future-Civic-Innovation/dp/0615889085/" target="_blank">order on Amazon</a>, we've also published the digital version of this book on this site under a Creative Commons license. The full text of this site is on GitHub — which means that anyone can submit a pull request with a suggested edit. Help us improve this resource for the community and write the next edition of <em>Beyond Transparency</em> by <a href="https://github.com/codeforamerica/beyondtransparency" target="_blank">submitting your pull requests.</a></p>
+     <p><a href="http://codeforeamerica.org" target="_blank">Code for America</a> is a national nonprofit committed to building a government for the people, by the people, that works in the 21st century. Over the past four years, CfA has worked with dozens of cities to support civic innovation through open data. You can support this work by <a href="https://github.com/codeforamerica/beyondtransparency" target="_blank">contributing to the book on GitHub</a>, <a href="http://brigade.codeforamerica.org">joining the CfA volunteer community</a> (the Brigade), <a href="https://secure.codeforamerica.org/page/contribute/default">donating to Code for America</a>, or <a href="http://www.codeforamerica.org/cities/" target="_blank">connecting your city</a> with CfA.</p>
+
+     <div class="email">
+       <h3>Interested in more about open data and Code for America?</h3>
+       <form action="http://codeforamerica.us2.list-manage2.com/subscribe/post?u=d9acf2a4c694efbd76a48936f&amp;id=3ac3aef1a5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" role="form" novalidate>
+         <div class="form-group">
+	
+	       <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+	       <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+         </div>
+       </form>
+     </div>
+
+     
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<div class="footer">
+  <div class="content">
+    <p>
+      The People's Roadmap to a Digital New York City &mdash;  2013 <a href="http://betanyc.us" target="_blank">BetaNYC</a>
+    </p>
+  </div>
+</div>
+</div>
+>>>>>>> master

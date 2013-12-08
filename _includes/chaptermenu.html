@@ -1,0 +1,23 @@
+<div class="chapter-nav">
+  <div class="close">&rarr;</div>
+  <div class="clear"></div>
+  <ul >
+    {% for p in site.pages %}
+      {% if p.layout == "chapter" %}
+    <a href="{{ p.url }}"><li 
+                                {% if page.url == p.url %}
+                                class="current-page"
+                                {% endif %}
+                                >
+        {% if p.ispart == true %}
+          <div class="nav-part">PART {{ p.part }}</div>
+        {% endif %}
+        {{ p.title }}<div class="nav-chapter-author">
+            {% for a in p.author %}
+              {{a.name}}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </div></li></a>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div> 
